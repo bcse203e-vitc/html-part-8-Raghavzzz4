@@ -1,0 +1,19 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter in a Textarea</title>
+</head>
+<body>
+    <textarea id="textarea" oninput="countWords()"></textarea>
+    <p id="word-count"></p>
+
+    <script>
+        function countWords() {
+            const textarea = document.getElementById('textarea');
+            const wordCount = textarea.value.trim().split(/\s+/).length;
+            document.getElementById('word-count').innerHTML = `Word Count: ${wordCount}`;
+        }
+    </script>
+</body>
+</html>

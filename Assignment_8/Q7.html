@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>Detect Key Pressed</title>
+</head>
+<body>
+    <p id="key-pressed"></p>
+
+    <script>
+        document.addEventListener('keydown', (event) => {
+            const keyPressedElement = document.getElementById('key-pressed');
+            keyPressedElement.innerHTML = `You pressed: ${event.key}`;
+        });
+    </script>
+</body>
+</html>
